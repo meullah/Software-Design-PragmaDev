@@ -1,0 +1,64 @@
+module TestCases_TMCS
+{
+	// Data types
+	type integer PhoneNumberType (1..2)
+
+	// The messages
+	type record sCall {
+		PhoneNumberType param1
+	}
+	type enumerated sHangUp { e_sHangUp }
+	type enumerated sWait { e_sWait }
+	type enumerated sCallConf { e_sCallConf }
+	type enumerated sHangUpConf { e_sHangUpConf }
+	type enumerated sReady { e_sReady }
+  
+	// The ports
+	type port cEnvPatient_type message {
+		out sCall;
+		out sHangUp;
+		in sBusy;
+		in sCallConf;
+		in sHangUpConf
+	}
+	type port cEnvCentral_type message {
+		in sReady
+	}
+
+	// The SUT - System Under Test
+	type component TMCS {
+		port cEnvPatient_type cEnvPatient;
+		port cEnvCentral_type cEnvCental;
+	};
+
+	// Templates definitions
+	template sReady SystemIsReady := ?;
+	template sCallConf CallConf := ?;
+	template sWait Wait := ?;
+	template sCall Doctor := { param1 := 2 };
+
+	// the test cases
+	testcase tc_CallDoctor() runs on TMCS
+	{
+		cEnvCental.receive(SystemIsReady);
+		cEnvPatient.send(Doctor);
+		alt
+		{
+			[]cEnvPatient.receive(CallConf)
+			{
+				setverdict(pass);
+			}
+			[]cEnvPatient.receive(Wait)
+			{
+				setverdict(fail);
+			}
+		}
+	}
+  
+   
+	// The control part
+	control{
+		var verdicttype verdict1;
+		verdict1 := execute(tc_CallDoctor());
+	}
+}

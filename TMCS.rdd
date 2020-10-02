@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="sys" defaultColorsNeedFixing="FALSE" name="TMCS" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="2" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB1" type="sdlSysDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB2" type="sdlText" xCenter="220" yCenter="242" fixedDimensions="TRUE" width="352" height="396" color="#000000" fillColor="#FFFFFF">
+<Description></Description>
+<Text>/*Maximum Number of pClientPatient Processes */
+synonym NUM_PATIENT Integer = 3;
+
+/*Maximum Number of pClientDoctor Processes */
+synonym NUM_DOCTOR Integer = 2;
+
+syntype PhoneNumberType = Integer
+  default 1;
+  constants 1..NUM_DOCTOR
+endsyntype;
+
+/*Type of array of pLocal PIDs */
+newtype DoctorArrayType
+  Array(PhoneNumberType,PID)
+endnewtype;
+
+newtype Journal
+  struct
+    Name CharString;
+    Diagnosis CharString;
+    Date CharString;
+endnewtype;</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB5" type="sdlText" xCenter="220" yCenter="539" fixedDimensions="TRUE" width="352" height="132" color="#000000" fillColor="#FFFFFF">
+<Description></Description>
+<Text>signal sCall(PhoneNumberType),sHangUp;
+signal sReady,sLogOn,sAvailable;
+signal sGetId(PhoneNumberType), sId(PID);
+signal sCnxReq(Journal);
+signal sCnxConf,sCallConf;
+signal sDisReq;
+signal sDisConf,sHangUpConf,sBusy,sLogOff;
+signal sWait,sError;</Text>
+</Symbol>
+</Symbol>
+</DiagramPartition>
+
+<DiagramPartition name="Part. 1" nbPagesH="2" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE" scaleFactor="1.0"/>
+
+<Symbol symbolId="SYMB6" type="sdlSysDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB7" type="sdlPrcs" xCenter="363" yCenter="99" fixedDimensions="TRUE" width="88" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>pCentral</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB8" type="sdlPrcs" xCenter="374" yCenter="275" fixedDimensions="FALSE" width="220" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>pClientDoctor(0,NUM_DOCTOR)</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB9" type="sdlPrcs" xCenter="825" yCenter="374" fixedDimensions="FALSE" width="242" height="44" color="#000000" fillColor="#C4EFED">
+<Description></Description>
+<Text>pClientPatient(0,NUM_PATIENT)</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK12" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cEnvCental</Text>
+<Connector attachedSymbolId="SYMB6" type="chnl" isOutside="FALSE" side="w" position="-0.743225806452" endType="midarrow">
+<Text id="1">[sReady]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="363"/>
+
+</Link>
+
+<Link linkId="LINK9" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cEnvPatient</Text>
+<Connector attachedSymbolId="SYMB6" type="chnl" isOutside="FALSE" side="w" position="-0.0335483870968" endType="midarrow">
+<Text id="1">[sCallConf,sHangUpConf,sWait]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[sCall,sHangUp]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="825"/>
+
+</Link>
+
+<Link linkId="LINK14" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cDoc_Central</Text>
+<Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[ sLogOn,
+  sAvailable,
+  sBusy]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="x" position="-0.1" endType="midarrow">
+<Text id="1">[]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="176"/>
+
+</Link>
+
+<Link linkId="LINK13" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cPatient_Certral</Text>
+<Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[sGetId]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="x" position="0.545454545455" endType="midarrow">
+<Text id="1">[sId,
+sBusy,
+sError]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="528"/>
+<LinkSegment orientation="v" length="275"/>
+
+</Link>
+
+<Link linkId="LINK6" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cEnvDoctor</Text>
+<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[sLogOn,
+ sAvailable,
+ sLogOff]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB6" type="chnl" isOutside="FALSE" side="w" position="-0.289032258065" endType="midarrow">
+<Text id="1">[ ]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="-374"/>
+
+</Link>
+
+<Link linkId="LINK11" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>cDoc_Patient</Text>
+<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[sCnxReq,
+ sDisReq]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="x" position="-0.479338842975" endType="midarrow">
+<Text id="1">[sCnxConf,sDisConf]
+</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="393"/>
+<LinkSegment orientation="v" length="99"/>
+
+</Link>
+</DiagramPartition>
+
+</Diagram>

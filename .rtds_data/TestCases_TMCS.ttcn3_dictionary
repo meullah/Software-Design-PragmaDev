@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="9620" language="none">
+<Item id="ITEM1" type="ttcn_module" name="TestCases_TMCS" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="TRUE" lineNumber="0" columnNumber="7"/>
+</Item>
+<Item id="ITEM10" type="ttcn_component" name="integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="type"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="3" columnNumber="6"/>
+</Item>
+<Item id="ITEM11" type="type" name="sReady" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_signature"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="34" columnNumber="10"/>
+</Item>
+<Item id="ITEM12" type="type" name="sHangUpConf" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="21" columnNumber="5"/>
+</Item>
+<Item id="ITEM13" type="ttcn_port_type" name="cEnvPatient_type" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="29" columnNumber="7"/>
+</Item>
+<Item id="ITEM14" type="type" name="sCall" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="17" columnNumber="6"/>
+</Item>
+<Item id="ITEM15" type="type" name="sCallConf" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="20" columnNumber="5"/>
+</Item>
+<Item id="ITEM16" type="variable" name="param1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_template"/>
+<AlternateType type="timer"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="37" columnNumber="28"/>
+</Item>
+<Item id="ITEM17" type="type" name="sReady" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="24" columnNumber="5"/>
+</Item>
+<Item id="ITEM18" type="type" name="sHangUp" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="18" columnNumber="6"/>
+</Item>
+<Item id="ITEM19" type="type" name="sCallConf" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_signature"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="35" columnNumber="10"/>
+</Item>
+<Item id="ITEM2" type="ttcn_port_type" name="cEnvCentral_type" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="30" columnNumber="7"/>
+</Item>
+<Item id="ITEM20" type="ttcn_template" name="CallConf" parentId="ITEM1" scope="none" variableTypeName="sCallConf" variableTypeId="ITEM19" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="46" columnNumber="25"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="35" columnNumber="20"/>
+</Item>
+<Item id="ITEM21" type="ttcn_test_case" name="tc_CallDoctor" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE" runsOn="ITEM4" systemInterface="ITEM4">
+<SourceFilePosition isDefine="FALSE" lineNumber="61" columnNumber="22"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="40" columnNumber="10"/>
+</Item>
+<Item id="ITEM22" type="ttcn_template" name="Wait" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM21" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="50" columnNumber="25"/>
+</Item>
+<Item id="ITEM23" type="variable" name="Doctor" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM21" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_template"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="43" columnNumber="19"/>
+</Item>
+<Item id="ITEM24" type="ttcn_template" name="CallConf" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM21" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="46" columnNumber="25"/>
+</Item>
+<Item id="ITEM25" type="ttcn_template" name="SystemIsReady" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM21" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="42" columnNumber="21"/>
+</Item>
+<Item id="ITEM26" type="type" name="sCallConf" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="20" columnNumber="5"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="35" columnNumber="10"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="11" columnNumber="17"/>
+</Item>
+<Item id="ITEM27" type="type" name="sWait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="36" columnNumber="10"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="10" columnNumber="17"/>
+</Item>
+<Item id="ITEM28" type="type" name="sCall" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="17" columnNumber="6"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="37" columnNumber="10"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="6" columnNumber="13"/>
+</Item>
+<Item id="ITEM29" type="variable" name="param1" parentId="ITEM28" scope="none" variableTypeName="PhoneNumberType" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+</Item>
+<Item id="ITEM3" type="type" name="sBusy" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="19" columnNumber="5"/>
+</Item>
+<Item id="ITEM30" type="ttcn_port_type" name="cEnvCentral_type" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="30" columnNumber="7"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="23" columnNumber="11"/>
+<TtcnPortTypeElement way="in" typeId="ITEM17"/>
+<TtcnPortTypeElement way="in" typeId="ITEM17"/>
+<TtcnPortTypeElement way="in" typeId="ITEM17"/>
+<TtcnPortTypeElement way="in" typeId="ITEM17"/>
+</Item>
+<Item id="ITEM31" type="ttcn_template" name="Doctor" parentId="ITEM1" scope="none" variableTypeName="sCall" variableTypeId="ITEM9" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="43" columnNumber="19"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="37" columnNumber="16"/>
+</Item>
+<Item id="ITEM32" type="ttcn_function" name="control" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+</Item>
+<Item id="ITEM33" type="ttcn_component" name="verdicttype" scope="global" defined="FALSE" anchorItemId="ITEM32" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="type"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="60" columnNumber="6"/>
+</Item>
+<Item id="ITEM34" type="ttcn_test_case" name="tc_CallDoctor" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM32" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="61" columnNumber="22"/>
+</Item>
+<Item id="ITEM35" type="variable" name="verdict1" parentId="ITEM32" scope="global" defined="FALSE" anchorItemId="ITEM32" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_template"/>
+<AlternateType type="timer"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="61" columnNumber="2"/>
+</Item>
+<Item id="ITEM36" type="variable" name="verdict1" parentId="ITEM32" scope="none" variableTypeName="verdicttype" variableTypeId="ITEM33" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="61" columnNumber="2"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="60" columnNumber="18"/>
+</Item>
+<Item id="ITEM37" type="ttcn_component" name="TMCS" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="40" columnNumber="34"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="28" columnNumber="16"/>
+</Item>
+<Item id="ITEM38" type="ttcn_port" name="cEnvPatient" parentId="ITEM37" scope="none" instanciatedTypeId="ITEM13" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="43" columnNumber="2"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="46" columnNumber="5"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="50" columnNumber="5"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="29" columnNumber="24"/>
+</Item>
+<Item id="ITEM39" type="ttcn_port" name="cEnvCental" parentId="ITEM37" scope="none" instanciatedTypeId="ITEM2" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="42" columnNumber="2"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="30" columnNumber="24"/>
+</Item>
+<Item id="ITEM4" type="ttcn_component" name="TMCS" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="40" columnNumber="34"/>
+</Item>
+<Item id="ITEM40" type="ttcn_template" name="Wait" parentId="ITEM1" scope="none" variableTypeName="sWait" variableTypeId="ITEM8" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="50" columnNumber="25"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="36" columnNumber="16"/>
+</Item>
+<Item id="ITEM41" type="ttcn_port_type" name="cEnvPatient_type" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="29" columnNumber="7"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="16" columnNumber="11"/>
+<TtcnPortTypeElement way="out" typeId="ITEM14"/>
+<TtcnPortTypeElement way="out" typeId="ITEM18"/>
+<TtcnPortTypeElement way="in" typeId="ITEM3"/>
+<TtcnPortTypeElement way="in" typeId="ITEM15"/>
+<TtcnPortTypeElement way="in" typeId="ITEM12"/>
+<TtcnPortTypeElement way="out" typeId="ITEM14"/>
+<TtcnPortTypeElement way="out" typeId="ITEM18"/>
+<TtcnPortTypeElement way="in" typeId="ITEM3"/>
+<TtcnPortTypeElement way="in" typeId="ITEM15"/>
+<TtcnPortTypeElement way="in" typeId="ITEM12"/>
+<TtcnPortTypeElement way="out" typeId="ITEM14"/>
+<TtcnPortTypeElement way="out" typeId="ITEM18"/>
+<TtcnPortTypeElement way="in" typeId="ITEM3"/>
+<TtcnPortTypeElement way="in" typeId="ITEM15"/>
+<TtcnPortTypeElement way="in" typeId="ITEM12"/>
+<TtcnPortTypeElement way="out" typeId="ITEM14"/>
+<TtcnPortTypeElement way="out" typeId="ITEM18"/>
+<TtcnPortTypeElement way="in" typeId="ITEM3"/>
+<TtcnPortTypeElement way="in" typeId="ITEM15"/>
+<TtcnPortTypeElement way="in" typeId="ITEM12"/>
+</Item>
+<Item id="ITEM42" type="type" name="PhoneNumberType" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="TRUE" syntypeBaseTypeId="ITEM10">
+<SourceFilePosition isDefine="FALSE" lineNumber="7" columnNumber="2"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="3" columnNumber="14"/>
+</Item>
+<Item id="ITEM43" type="type" name="sHangUp" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="18" columnNumber="6"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="9" columnNumber="17"/>
+</Item>
+<Item id="ITEM44" type="ttcn_template" name="SystemIsReady" parentId="ITEM1" scope="none" variableTypeName="sReady" variableTypeId="ITEM11" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="42" columnNumber="21"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="34" columnNumber="17"/>
+</Item>
+<Item id="ITEM45" type="type" name="sReady" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="24" columnNumber="5"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="34" columnNumber="10"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="13" columnNumber="17"/>
+</Item>
+<Item id="ITEM46" type="type" name="sHangUpConf" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="21" columnNumber="5"/>
+<SourceFilePosition isDefine="TRUE" lineNumber="12" columnNumber="17"/>
+</Item>
+<Item id="ITEM5" type="ttcn_port" name="cEnvPatient" parentId="ITEM4" scope="global" defined="FALSE" createInRealizing="FALSE" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="43" columnNumber="2"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="46" columnNumber="5"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="50" columnNumber="5"/>
+</Item>
+<Item id="ITEM6" type="ttcn_port" name="cEnvCental" parentId="ITEM4" scope="global" defined="FALSE" createInRealizing="FALSE" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<SourceFilePosition isDefine="FALSE" lineNumber="42" columnNumber="2"/>
+</Item>
+<Item id="ITEM7" type="ttcn_component" name="PhoneNumberType" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="type"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="7" columnNumber="2"/>
+</Item>
+<Item id="ITEM8" type="type" name="sWait" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_signature"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="36" columnNumber="10"/>
+</Item>
+<Item id="ITEM9" type="type" name="sCall" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<AlternateType type="ttcn_signature"/>
+<SourceFilePosition isDefine="FALSE" lineNumber="37" columnNumber="10"/>
+</Item>
+</DictionaryObjects>

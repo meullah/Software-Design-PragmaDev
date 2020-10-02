@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE PrototypingGui SYSTEM "rtdsPrototypingGui.dtd">
+
+<PrototypingGui>
+<Gui width="400" height="300" backgroundColor="#000000" backgroundImage="">
+<Widget id="1" name="BUTTON" type="BUTTON" x="310" y="70" width="80" height="30" text="Available" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="sAvailable" data=""></OutputAction>
+</Widget>
+<Widget id="2" name="BUTTON" type="BUTTON" x="310" y="120" width="80" height="30" text="LogOff" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="sLogOff" data=""></OutputAction>
+</Widget>
+<Widget id="3" name="BUTTON" type="BUTTON" x="310" y="30" width="80" height="30" text="LogOn" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="sLogOn" data=""></OutputAction>
+</Widget>
+<Widget id="4" name="BUTTON" type="BUTTON" x="20" y="20" width="100" height="30" text="Call Doctor" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="sCall" data="param1|=2"></OutputAction>
+</Widget>
+<Widget id="5" name="BUTTON" type="BUTTON" x="20" y="70" width="100" height="30" text="HangUp" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="sHangUp" data=""></OutputAction>
+</Widget>
+<Widget id="6" name="LED" type="LED" x="140" y="50" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+</Gui>
+<Trigger messageName="sWait">
+<Case caseName="New case">
+<GuiAction widgetId="6" actionType="CHANGE_COLOR" value="#FFFF00"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="sCallConf">
+<Case caseName="New case">
+<GuiAction widgetId="6" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="sHangUpConf">
+<Case caseName="New case">
+<GuiAction widgetId="6" actionType="CHANGE_COLOR" value="red"></GuiAction>
+</Case>
+</Trigger>
+</PrototypingGui>

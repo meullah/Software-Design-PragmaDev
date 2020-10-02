@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="9620" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="sLogOn">
+<UsingSymbols>
+<SymbolReference symbolId="SYM20" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="sAvailable">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="sReady">
+<UsingSymbols>
+<SymbolReference symbolId="SYM26" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG4" name="sGetId">
+<UsingSymbols>
+<SymbolReference symbolId="SYM27" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG5" name="sId">
+<UsingSymbols>
+<SymbolReference symbolId="SYM31" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG6" name="sError">
+<UsingSymbols>
+<SymbolReference symbolId="SYM32" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="pCentral" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG5"/>
+<SignalReference id="SIG6"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM10" type="variable" name="NUM_DOCTOR" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM28"/>
+<SymbolReference symbolId="SYM5"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="NUM_PATIENT" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM14"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM12" type="variable" name="i" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1" positions="1,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM13" type="variable" name="j" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1" positions="3,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM14" type="variable" name="processes_ClientDoctor" parentId="ITEM1" scope="none" variableTypeName="DoctorArrayType" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM1" positions="2,0"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM15" type="connector" name="here" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM16"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM19"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM16" type="process" name="pClientPatient" scope="block" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM18"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM17" type="connector" name="label" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM3"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM9"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM18" type="state" name="Idle" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM11"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM10"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM19" type="process" name="pClientDoctor" scope="block" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM7"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM2" type="variable" name="i" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM31"/>
+<SymbolReference symbolId="SYM28"/>
+<SymbolReference symbolId="SYM8"/>
+<SymbolReference symbolId="SYM27"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM20" type="state" name="Ready" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM24"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM23"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="variable" name="j" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM17"/>
+<SymbolReference symbolId="SYM13"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="variable" name="False" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM30"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM1"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="type" name="DoctorArrayType" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM1"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="variable" name="True" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM29"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="variable" name="offspring" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM8"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM9" type="variable" name="processes_ClientDoctor" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM31"/>
+<SymbolReference symbolId="SYM8"/>
+</UsingSymbols>
+</Item>
+</DictionaryObjects>

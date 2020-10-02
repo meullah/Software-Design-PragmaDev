@@ -1,0 +1,26 @@
+=== Generating byte-code for diagram TMCS (C:\Users\Muham\Desktop\8th Semester\Software Design and Testing\Semester Project\TMCS.rdd)...
+=== Generating byte-code for diagram pClientDoctor (C:\Users\Muham\Desktop\8th Semester\Software Design and Testing\Semester Project\pClientDoctor.rdd)...
+--- Start transition
+--- Transition LoggedOff - sLogOn
+--- Transition Idle - sCnxReq
+--- Transition LoggedIn - sAvailable
+--- Transition Connected - sDisReq
+--- Transition Disconnected - sLogOff
+--- Transition Disconnected - sAvailable
+=== Generating byte-code for diagram pCentral (C:\Users\Muham\Desktop\8th Semester\Software Design and Testing\Semester Project\pCentral.rdd)...
+--- Start transition
+--- Transition Ready - sGetId
+--- Transition Idle - sAvailable
+--- Transition Idle - sLogOn
+=== Generating byte-code for diagram pClientPatient (C:\Users\Muham\Desktop\8th Semester\Software Design and Testing\Semester Project\pClientPatient.rdd)...
+--- Start transition
+--- Transition Waiting - sHangUp
+--- Transition Waiting - sAvailable
+--- Transition QuitFromWaiting - sHangUpConf
+--- Transition Idle - sCall
+--- Transition Connecting - sCnxConf
+--- Transition GettingId - sBusy
+--- Transition GettingId - sId
+--- Transition Connected - sHangUp
+--- Transition DisConnecting - sDisConf
+

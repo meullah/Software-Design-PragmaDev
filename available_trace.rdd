@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3 LIFELINEID_4 LIFELINEID_5 LIFELINEID_6 LIFELINEID_7"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="#000000" text="pCentral
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="PROCESS_START" color="#000000" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2 LIFELINEID_1" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_127"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="#000000" text="pClientPatient
+(2)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3 LIFELINEID_1" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_128"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="#000000" text="pClientPatient
+(3)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4 LIFELINEID_1" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_129"/>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="PROCESS_START" color="#000000" text="pClientPatient
+(4)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_1" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_130"/>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="PROCESS_START" color="#000000" text="pClientDoctor
+(5)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6 LIFELINEID_1" event_type="PROCESS_CREATION" color="#000000" identifier="_LINK_131"/>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="PROCESS_START" color="#000000" text="pClientDoctor
+(6)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND1" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND2" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND3" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND4" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="#000000" text="sLogOn()" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="#000000" text="sAvailable()" identifier="MSG2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND5" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" text="sLogOn()" identifier="MSG3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" text="sAvailable()" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND6" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sLogOn()" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" text="Idle" identifier="COND7" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND7"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sAvailable()" identifier="MSG2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" text="sReady()" identifier="MSG5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_RECEIVE" color="#000000" text="sReady()" identifier="MSG5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" text="Ready" identifier="COND8" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Ready" identifier="COND8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sLogOn()" identifier="MSG3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sAvailable()" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_SEND" color="#000000" text="sCall(|{param1|=2|})" identifier="MSG6"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM5" identifier="MSG6" text="sCall(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM7" identifier="MSG7" text="sGetId(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM8" identifier="COND9" background="-" text="GettingId"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="GettingId" identifier="COND9" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pcentral.rdd*SYM27" identifier="MSG7" text="sGetId(|{param1|=2|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pcentral.rdd*SYM31" identifier="MSG8" text="sId(|{param1|=6|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pcentral.rdd*SYM33" identifier="COND10" background="-" text="Ready"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Ready" identifier="COND10" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pcentral.rdd*SYM33"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM10" identifier="MSG8" text="sId(|{param1|=6|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM12" identifier="MSG9" text="sCnxReq(|{param1|=|{Name|=|,Diagnosis|=|,Date|=|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM13" identifier="COND11" background="-" text="Connecting"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Connecting" identifier="COND11" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM7" identifier="MSG9" text="sCnxReq(|{param1|=|{Name|=|,Diagnosis|=|,Date|=|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM14" identifier="MSG10" text="sCnxConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM18" identifier="MSG11" text="sBusy()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM15" identifier="COND12" background="-" text="Connected"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Connected" identifier="COND12" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM15"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM15" identifier="MSG10" text="sCnxConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM16" identifier="MSG12" text="sCallConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_RECEIVE" color="#000000" text="sCallConf()" identifier="MSG12"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM20" identifier="COND13" background="-" text="Connected"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Connected" identifier="COND13" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM20"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sBusy()" identifier="MSG11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_SEND" color="#000000" text="sHangUp" identifier="MSG13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" text="sHangUp" identifier="MSG13"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_SEND" color="#000000" text="sHangUp" identifier="MSG14"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM22" identifier="MSG14" text="sHangUp"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM23" identifier="MSG15" text="sDisReq()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM24" identifier="COND14" background="-" text="DisConnecting"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="DisConnecting" identifier="COND14" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM24"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM20" identifier="MSG15" text="sDisReq()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM21" identifier="MSG16" text="sDisConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM22" identifier="COND15" background="-" text="Disconnected"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Disconnected" identifier="COND15" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM22"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM26" identifier="MSG16" text="sDisConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM27" identifier="MSG17" text="sHangUpConf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_RECEIVE" color="#000000" text="sHangUpConf()" identifier="MSG17"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM28" identifier="COND16" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND16" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientpatient.rdd*SYM28"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_7" event_type="MESSAGE_SEND" color="#000000" text="sAvailable" identifier="MSG18"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM26" identifier="MSG18" text="sAvailable"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM28" identifier="MSG19" text="sAvailable()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_6" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM30" identifier="COND17" background="-" text="Idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="Idle" identifier="COND17" model_id="PragmaDevStudio:symbol*c:\users\muham\desktop\8th semester\software design and testing\semester project\pclientdoctor.rdd*SYM30"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" text="sAvailable()" identifier="MSG19"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE" scaleFactor="1.0"/>
+</MscDiagram>
